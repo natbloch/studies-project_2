@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />
+     
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Playlist Project Nathaniel Bloch</title>
+</head>
+
+
+<body>
+<!--Nav Bar-->
+	<div class="jumbotron fixed">
+				<a id="myBtn" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus-circle" aria-hidden="true"> Add new album</i></a>
+				<div id="myModal" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+							<span class="close">×</span>
+							<h4 class="modal-title">Add New Playlist</h4>
+						</div>
+						<div class="modal-body">
+							<div id="add-name-image">
+								  <p>Playlist Name</p>
+								  <input id="playlist-Name" type="text" placeholder="playlist Name">
+								  <p>Playlist URL</p>
+								  <input id="previewImg" type="text" placeholder="playlist Img URL">
+								<div id="chgbut">
+									<button id="clear" type="button" class="btn btn-danger">Clear Fields</button>
+									 <a id="nextt-btn" href="#modalsongs" data-toggle="modal" data-dismiss="modal"><button id="next-btn" type="button" class="btn btn-danger">Next</button></a>
+								</div>
+							</div>
+							<div id="prvimg"> 
+								<img src="">
+							</div>
+						</div>
+						
+					</div>
+				</div>		
+				
+			   <!-- Modal album songs-->
+				<div id="modalsongs" class="modal">
+					<div class="modal-content">
+							<div class="modal-header">
+								<span class="close">×</span>
+								<h4 class="modal-title">Add Playlist Songs</h4>
+							</div>
+							<div id="songs-ctr" class="modal-body">
+								<div>Song URL: <input class="songUrl" type="text" size="35" name="surl"> Name: <input type="text" name="nurl"></div>
+								<div>Song URL: <input class="songUrl" type="text" size="35" name="surl"> Name: <input type="text" name="nurl"></div>
+							</div>
+							<div class="modal-footer">
+								<i id="add-song" class="fa fa-plus-circle" aria-hidden="true"> Add Song</i>
+								<i id="remove-last" class="fa fa-times-circle" aria-hidden="true">Remove last</i>
+								
+								<button id="finishSave" type="button" class="btn btn-danger" data-dismiss="modal">Finish and Save</button>
+							</div>
+					</div>
+				</div>
+				
+				<div class="searcharea nav navbar-nav navbar-right">
+					<select placeholder="Search Album" id="navsearch" class="input-medium search-query">
+					</select>
+					<button type="submit" class="add-on"><i class="fa fa-search" aria-hidden="true"></i></button>
+				</div>
+				
+				
+				
+				
+	</div>
+	
+
+
+	
+	
+<!--Player-->	
+	<div class="row playarea hidden">
+		<div class="playerdiv col-sm-offset-3 col-sm-6 clearfix img-rounded jumbotron">
+			<div class="playerctr image-div pull-left">
+				<div class=""></div>
+				<span id="playpause"><i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></span>
+			</div>
+			<div class="playerright pull-left">
+				<div class="playerbar">
+					<audio controls></audio>
+				</div>
+				<h5>NOW PLAYING: <span>Song</span></h5>
+				<div class="playerlist">
+					
+					<ol id="songplayinglist">
+					
+					</ol>
+				</div>
+			</div>	
+			
+		</div>
+		<div class="playersetting">
+			<i class="fa fa-times-circle fa-3x" aria-hidden="true"></i>
+			<i class="fa fa-pencil fa-3x" aria-hidden="true"></i>
+		</div>
+	</div>
+
+
+
+<!--Album List-->
+	<div id="thelist" class="row">
+		<!-- Album Box Model
+		<div albumid="INT" class="col-sm-3">
+			<div class="curved">
+				<h1 >Album Name</h1>
+			</div>
+			<div class="imagearea" style="background-image:url(www.abc.com)>
+				<span class="delete"><i class="fa fa-trash" aria-hidden="true"></i></span>
+				<span class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></span><br>
+				<span class="play"><i class="fa fa-play" aria-hidden="true"></i></span>
+			</div>
+		</div>
+		-->	
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>  
+	<script src="script.js"></script>
+    <script>
+		// apply dynamic padding at the top of the body according to the fixed navbar height
+		var onResize = function() {
+			$("body").css("padding-top", $(".navbar-fixed-top").height());
+		};
+		$(window).resize(onResize);
+		$(function() {
+		  onResize();
+		});
+		
+		// onload call to get album data
+		$(function() {
+			getAllAlbums();
+		});  
+    </script>
+</body>
+</html>

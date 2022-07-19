@@ -1,0 +1,314 @@
+	/*Navigation Bar*/	
+		.jumbotron.fixed{
+			background-color:lightgrey;
+		}
+		
+		.jumbotron.fixed .searcharea{
+			margin:0px 15px 50px 10px;
+		}
+		
+		.jumbotron.fixed .searcharea #navsearch{
+			width:150px;
+		}
+		
+		.jumbotron.fixed > #myBtn{
+			margin-left:20px;
+		}
+		
+		.playarea > .playerdiv{
+			position:relative;
+			margin-top:10px;
+			padding:30px 50px 30px 30px;
+			background-color:orange;
+			border-radius:130px;
+		}
+		
+		.playarea > .playersetting{
+			position:relative;
+			float:left;
+			margin-left:30px;
+			margin-top:120px;
+		}
+		
+		.playarea > .playersetting > i{
+			opacity:0.85;
+			width:50px;
+			height:50px;
+			display:block;
+		}
+		
+		.playarea > .playersetting > *:hover{
+			opacity:1;
+			cursor:pointer;
+		}
+		
+		.playarea > .playerdiv > .playerctr > div{
+			border-radius: 50%;
+			width: 220px;
+			height: 220px;
+			background-image:url('');
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 100% 100%;
+		}
+		
+		.playarea > .playerdiv > .playerctr > #playpause{
+			color:white;
+			position:absolute;
+			float:left;
+			left:120px;
+			top:120px;
+		}
+
+		.playarea > .playerdiv > .playerctr > #playpause:hover{
+			cursor:pointer;
+		}
+			
+		.playarea > .playerdiv > .playerright > .playerlist{
+			height:160px;
+			overflow:auto;
+		}
+			
+		.playarea > .playerdiv > .playerright > .playerlist > #songplayinglist > li:hover{
+			cursor:pointer;
+		}
+		
+		.playarea > .playerdiv > .playerright > .playerlist > #songplayinglist > li.white{
+			color:white;
+		}
+		
+		
+		
+		
+		#thelist > div{
+			overflow:hidden;
+		}
+		
+		/*----ALBUMS----*/
+    
+    .curved{
+        position: relative;
+        width: 200px;
+        margin: auto;
+        height: 50px;
+        transform: rotate(-100deg);
+        -moz-transform: rotate(-27deg);
+        -webkit-transform: rotate(-40deg);
+        }
+    .curved > h1 {
+	   border: none;
+    }
+    .curved > h1 > span {
+        font-size: 20px;
+        height: 165px;
+        position: absolute;
+        left: 0px;
+        top: -17px;
+        transform-origin: bottom center;
+        -moz-transform-origin: bottom center;
+        -webkit-transform-origin: bottom center;
+    }
+		
+
+    .char0 { transform: rotate( 80deg); -moz-transform: rotate(80deg); -webkit-transform: rotate(6deg); }
+    .char1 { transform: rotate(18deg); -moz-transform: rotate(18deg); -webkit-transform: rotate(12deg); }
+    .char2 { transform: rotate(24deg); -moz-transform: rotate(24deg); -webkit-transform: rotate(18deg); }
+    .char3 { transform: rotate(30deg); -moz-transform: rotate(30deg); -webkit-transform: rotate(24deg); }
+    .char4 { transform: rotate(36deg); -moz-transform: rotate(36deg); -webkit-transform: rotate(30deg); }
+    .char5 { transform: rotate(42deg); -moz-transform: rotate(42deg); -webkit-transform: rotate(36deg); }
+    .char6 { transform: rotate(48deg); -moz-transform: rotate(48deg); -webkit-transform: rotate(42deg); }
+    .char7 { transform: rotate(54deg); -moz-transform: rotate(54deg); -webkit-transform: rotate(48deg); }
+    .char8 { transform: rotate(60deg); -moz-transform: rotate(60deg); -webkit-transform: rotate(54deg); }
+    .char9 { transform: rotate(66deg); -moz-transform: rotate(66deg); -webkit-transform: rotate(60deg); }
+    .char10 { transform: rotate(72deg); -moz-transform: rotate(70deg); -webkit-transform: rotate(66deg); }
+    .char11 { transform: rotate(78deg); -moz-transform: rotate(76deg); -webkit-transform: rotate(72deg); }
+    .char12 { transform: rotate(83deg); -moz-transform: rotate(78deg); -webkit-transform: rotate(77deg); }
+    .char13 { transform: rotate(88deg); -moz-transform: rotate(82deg); -webkit-transform: rotate(82deg); }
+    .char14 { transform: rotate(92deg); -moz-transform: rotate(85deg); -webkit-transform: rotate(85deg); }
+    .char15 { transform: rotate(99deg); -moz-transform: rotate(92deg); -webkit-transform: rotate(92deg); }
+    .char16 { transform: rotate(106deg); -moz-transform: rotate(97deg); -webkit-transform: rotate(97deg); }
+    .char17 { transform: rotate(113deg); -moz-transform: rotate(104deg); -webkit-transform: rotate(104deg); }
+    .char18 { transform: rotate(111deg); -moz-transform: rotate(109deg); -webkit-transform: rotate(109deg); }
+    .char19 { transform: rotate(113deg); -moz-transform: rotate(112deg); -webkit-transform: rotate(112deg); }
+    .char20 { transform: rotate(118deg); -moz-transform: rotate(117deg); -webkit-transform: rotate(117deg); }
+    .char21 { transform: rotate(122deg); -moz-transform: rotate(121deg); -webkit-transform: rotate(121deg); }
+    .char22 { transform: rotate(126deg); -moz-transform: rotate(125deg); -webkit-transform: rotate(125deg); }
+    .char23 { transform: rotate(130deg); -moz-transform: rotate(129deg); -webkit-transform: rotate(129deg); }
+    .char24 { transform: rotate(134deg); -moz-transform: rotate(133deg); -webkit-transform: rotate(133deg); }
+    .char25 { transform: rotate(138deg); -moz-transform: rotate(137deg); -webkit-transform: rotate(137deg); }
+
+
+		.imagearea{
+			border-radius: 50%;
+			width: 220px;
+			height: 220px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 100% 100%;
+			opacity: 0.85;
+		}  
+		.imagearea:hover{
+			opacity: 1;
+		
+		}
+		
+		.imagearea > *{
+			opacity:0.85; 
+			text-align: center;
+			color:white;
+		}
+		
+		.imagearea > *:hover{
+			 opacity: 1;
+			 cursor:pointer;
+		}
+	  
+		.delete{
+			position:relative;
+			float:left;
+			left:92px;
+			top:13px;
+		}
+		.edit{
+			position:relative;
+			float:left;
+			left:100px;
+			top:13px;
+		}
+		.play{
+			position:relative;
+			float:left;
+			left:98px;
+			top:80px;
+		}
+		
+		
+		.makespin{
+			-webkit-animation: spin 6s infinite linear;
+		}
+		
+		@-webkit-keyframes spin {
+			0%  {-webkit-transform: rotate(0deg);}
+			100% {-webkit-transform: rotate(360deg);}	
+		}
+		
+		
+	/* The Modal*/
+	
+	div.jumbotron.fixed > a{
+        cursor: pointer;
+        text-decoration: none;
+         color:black;
+    }
+	
+	.modal-content{
+		overflow:scroll;
+    }  
+
+    div.modal-header > h4{
+         font-weight: 600;
+    }
+    div.modal-body > div > p{
+        margin:0;
+    }
+
+   div.modal-body > div > div > a button{
+      margin: 60px 0 20px 0;
+       width:130px;
+	}
+
+   div.modal-body > div > div > button{
+       display: inline-block;
+       margin-top:40px;
+       width:130px;
+  }
+
+
+    #add-name-image{
+        position:relative;
+        float:left;
+    }
+    #prvimg{
+        position:relative;
+        float:right;
+        width:200px;
+        height:200px;
+        border:1px solid black;
+        margin-right:10px;
+   }
+    #myModal > div > div.modal-body > div > img{
+        width:100%;
+        height:100%;
+    }
+
+    #add-song{
+        cursor:pointer; 
+   }
+
+    width2{
+        width:80%;
+}
+   
+
+    #add-song{
+        position:relative;
+        float:left;
+        margin-top: 10px;
+		margin-left:20px;
+		
+    }
+	
+    #modal-2 > div > div > div.modal-body{
+          overflow-y: scroll;
+          margin-bottom: 10px; 
+    }
+	
+	#remove-last{
+		position:relative;
+        float:left;
+        margin-top: 10px;
+		margin-left:20px;
+	}
+	
+	#remove-last:hover{
+		cursor:pointer;
+	}
+	
+	
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
